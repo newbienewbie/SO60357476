@@ -1,0 +1,13 @@
+
+
+### payload
+POST https://localhost:5001/users/login
+Content-Type:  application/json
+
+{"username":"abc","password":"pss", "rememberme":false}
+
+### Incorrect content-type
+POST https://localhost:5001/users/login
+Content-Type:  application/vnd.api+json
+
+{"username":"abc","password":"pss", "rememberme":false}
